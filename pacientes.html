@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXPEDIENTES DE PACIENTES - Consultorio Médico</title>
+  <link rel="stylesheet" href="est_pacientes.css">
+</head>
+<body>
+  <div class="container">
+    <h2>EXPEDIENTES DE PACIENTES</h2>
+    <form>
+      <label for="IdPaciente">Id Paciente</label>
+      <input type="number" id="id_paciente" name="id_paciente" required>
+      
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="Nombre" required>
+
+      <label for="Ap">Apellido Paterno:</label>
+      <input type="text" id="Ap" name="Ap" required>
+      
+      <label for="Am">Apellido Materno:</label>
+      <input type="text" id="Am" name="Am" required>
+      
+      <label for="fechaNac">Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNac" name="fechaNac" required>
+      
+      <label for="id_Enfermedad">Enfermedad:</label>
+      <input type="number" id="id_enfermedad" name="id_enfermedad" required>
+
+      <label for="Antecedentes">Antecedentes:</label>
+      <textarea id="antecedentes" name="antecedentes"></textarea>
+      
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</body>
+</html>
