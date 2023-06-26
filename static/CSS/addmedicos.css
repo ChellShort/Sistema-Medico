@@ -1,0 +1,85 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 1cm;
+    border: 1px solid #f9f9f7;
+    border-radius: 5px;
+    margin-top:6%;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    background: #ffffff;
+    box-shadow: 0 15px 25px rgba(74, 74, 74, 0.6);
+
+
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 37px;
+    font-family: 'Merriweather', serif;
+
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(74, 74, 74, 0.6);
+    border-radius: 10px;
+}
+
+.login-box .user-box {position: relative;}
+
+
+  form {
+    display: flex;
+    font-family: 'Merriweather', serif;
+    flex-direction: column;
+  }
+  
+  input{
+    position: relative;
+    display: inline-block;
+    padding: 6px 20px;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  select{
+    position: relative;
+    display: inline-block;
+    padding: 6px 20px;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #0f1354;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    margin-top:4%;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/addmedicos.css') }}">
+    <title>Agregar Medico</title>
+</head>
+<body>
+    <div class="container">
+            <h2>Agregar Medico</h2>
+            <form action="/addmedicosguardar" method="POST">
+              <input type="text" id="txtnombre" name="txtnombre" required  placeholder="Nombre">
+              <input type="text" id="txtap" name="txtap" required placeholder="Apellido Materno">
+              <input type="text" id="txtam" name="txtam" required placeholder="Apellido Materno">
+              <input type="text" maxlength="15" name="txtrfc" id="txtrfc" required placeholder="RFC">
+              <input type="text" maxlength="15" name="txtcedula" id="txtcedula" required placeholder="Cedula">
+              <input type="email" name="txtemail" id="txtemail" required placeholder="Email">
+              <button type="submit">Guardar</button>
+            </form>
+    </div>    
+</body>
+</html>
