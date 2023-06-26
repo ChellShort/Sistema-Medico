@@ -9,28 +9,19 @@
 <body>
   <div class="container">
     <h2>EXPEDIENTES DE PACIENTES</h2>
-    <form>
-      <label for="IdPaciente">Id Paciente</label>
-      <input type="number" id="id_paciente" name="id_paciente" required>
-      
+    <form action="/pacientesguardar" method="POST">
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="Nombre" required>
-
+      <input type="text" name="txtnombre" required>
       <label for="Ap">Apellido Paterno:</label>
-      <input type="text" id="Ap" name="Ap" required>
-      
+      <input type="text" name="txtap" required>
       <label for="Am">Apellido Materno:</label>
-      <input type="text" id="Am" name="Am" required>
-      
+      <input type="text" name="txtam" required>
       <label for="fechaNac">Fecha de Nacimiento:</label>
-      <input type="date" id="fechaNac" name="fechaNac" required>
-      
+      <input type="date" name="txtfechanac" required>
       <label for="id_Enfermedad">Enfermedad:</label>
-      <input type="number" id="id_enfermedad" name="id_enfermedad" required>
-
+      <input type="number" name="txtidenfermedad" required>
       <label for="Antecedentes">Antecedentes:</label>
-      <textarea id="antecedentes" name="antecedentes"></textarea>
-      
+      <textarea type="text" name="txtantecedentes"></textarea>
       <button type="submit">Guardar</button>
     </form>
   </div>

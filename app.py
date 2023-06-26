@@ -30,6 +30,22 @@ def exploraciones():
 def pacientes():
     return render_template('pacientes.html')
 
+@app.route('/pacientesguardar', methods=['POST'])
+def pacientesguardar():
+    if request.method == 'POST':
+        # pasamos a variables el contenido de los input
+        Vnombre= request.form['txtnombre']
+        Vap= request.form['txtap']
+        Vam= request.form['txtam']
+        Vfechanac=request.form['txtfechanac']
+        Videnfermedad=request.form['txtidenfermedad']
+        Vantecedentes=request.form['txtantecedentes']
+        # Conectar y ejecutar el insert
+        CS = mysql.connection.cursor() # objeto de tipo cursor
+        CS.execute('insert into pacientes (nombre, ap, am, fechanac, antecedentes, id_enfermedad_tipo) values (%s, %s, %s, %s, %s, %s)',(Vnombre, Vap, Vam, Vfechanac, Vantecedentes, Videnfermedad))
+        mysql.connection.commit()
+    return redirect(url_for('pacientes'))    
+
 @app.route('/addmedicos')
 def addmedicos():
     return render_template('addmedicos.html')
